@@ -18,6 +18,13 @@ An Elixir client for the Amplitude HTTP API
     api_key: System.get_env("MY_AMPLITUDE_KEY")
   ```
 
+## Testing
+  Add this to `test.exs` so it doesn't make api requests in testing:
+  ```elixir
+    config :amplitude,
+      track_api_url: "test",
+      identify_api_url: "test"
+  ```
 ## Usage
 
   1. Track events with the `Amplitude.track/4` function:
