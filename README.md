@@ -19,7 +19,7 @@ An Elixir client for the Amplitude HTTP API
   ```
 
 ## Testing
-  Add this to `test.exs` so it doesn't make api requests in testing:
+  Add this to `test.exs` so it doesn't make api requests in test enviroment:
   ```elixir
     config :amplitude,
       track_api_url: "test",
