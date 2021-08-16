@@ -8,8 +8,14 @@ An Elixir client for the Amplitude HTTP API
 
   ```elixir
   def deps do
-    [{:amplitude, "~> 0.2.0"}]
+    [{:amplitude, "~> 0.3.0"}]
   end
+  ```
+
+  2. Set your `api_key` in `config.exs`, for example from an enviroment variable:
+  ```elixir
+  config :amplitude,
+    api_key: System.get_env("MY_AMPLITUDE_KEY")
   ```
 
 ## Usage
